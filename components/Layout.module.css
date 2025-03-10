@@ -1,0 +1,28 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0070f3;
+  }
+  
+  .main {
+    margin-bottom: 40px;
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
