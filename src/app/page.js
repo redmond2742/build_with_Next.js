@@ -15,7 +15,7 @@ export default function Home() {
       <a href="https://nextjs.org/">Next.js</a> offers a powerful and versatile set of tools that streamline the process of building modern, high-performance web applications. Designed with developer experience in mind, Next.js combines server-side rendering (SSR), static site generation (SSG), API routes, and automatic code splitting to optimize performance and scalability.
 <br></br>
 <br></br>
-With built-in support for TypeScript, image optimization, and internationalization, Next.js allows developers to focus on building dynamic, SEO-friendly, and highly interactive applications without worrying about complex configurations. Whether you're creating a simple blog, an e-commerce platform, or a large-scale enterprise app, Next.js provides the flexibility and efficiency to bring your ideas to life with minimal effort.
+With built-in support for TypeScript, image optimization, and internationalization, Next.js allows developers to focus on building dynamic, SEO-friendly, and highly interactive applications without worrying about complex configurations. Whether you&apos;re creating a simple blog, an e-commerce platform, or a large-scale enterprise app, Next.js provides the flexibility and efficiency to bring your ideas to life with minimal effort.
 
      </p>
          <div className="hero">
@@ -48,7 +48,7 @@ React has become the dominant JavaScript library for building user interfaces, b
             <b>Server-Side Rendering (SSR):</b> React, by default, does not help websites be Search engine Optimized to load quickly. Next.js solves this problem with server-side rendering (SSR), which allows React components to be rendered on the server before being sent to the client. This leads to faster load times and better SEO performance, as search engines can easily index server-rendered content.
           </li>
           <li>
-            <b>Static Site Generation (SSG):</b> In addition to SSR, Next.js offers static site generation (SSG), which allows developers to generate static HTML pages at build time. Similar to Jekyll, Gatsby, and Hugo for content that doesn't change often, Next.js can pre-build pages and serve them as static assets, resulting in blazing-fast load times. SSG is perfect for blogs, documentation sites, portfolios, and other content-driven applications.
+            <b>Static Site Generation (SSG):</b> In addition to SSR, Next.js offers static site generation (SSG), which allows developers to generate static HTML pages at build time. Similar to Jekyll, Gatsby, and Hugo for content that doesn&apos;t change often, Next.js can pre-build pages and serve them as static assets, resulting in blazing-fast load times. SSG is perfect for blogs, documentation sites, portfolios, and other content-driven applications.
           </li>
           <li>
             <b>Automatic Code Splitting:</b> Next.js automatically splits your code into smaller, more manageable chunks. This means that only the JavaScript needed for the current page is loaded, resulting in faster load times and better performance. It also helps in reducing the initial page load size, which can be crucial for mobile devices or slower internet connections.
@@ -132,7 +132,7 @@ React has become the dominant JavaScript library for building user interfaces, b
             "Dynamic Routing"
           ]}
           correctAnswer={2}
-          explanation="Static Site Generation (SSG) is the feature of Next.js that allows you to generate static HTML pages at build time, resulting in faster load times and better performance for content that doesn't change often."
+          explanation="Static Site Generation (SSG) is the feature of Next.js that allows you to generate static HTML pages at build time, resulting in faster load times and better performance for content that doesn&apos;t change often."
         />
               <Quiz
               title="Question 4"

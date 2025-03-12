@@ -1,6 +1,11 @@
 import Layout from '../../../components/Layout';
 import Quiz from '../../../components/Quiz';
 
+//Vercel templates: https://vercel.com/templates/next.js?utm_source=next-site&utm_medium=deploy-template-on-vercel-cta&utm_campaign=homepage-new
+// Blog starter templates
+
+
+
 export default function Routing() {
   return (
     <Layout>
