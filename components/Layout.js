@@ -21,7 +21,7 @@ export default function Layout({ children }) {
           {' | '}
           <Link href="/ssg">SSG</Link>
           {' | '}
-          <Link href="/authentication">Authentication</Link>
+          <Link href="/more-next">More Next.js</Link>
         </nav>
       </header>
       <main className={styles.main}>{children}</main>
