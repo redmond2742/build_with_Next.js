@@ -1,8 +1,14 @@
 import Layout from '../../../components/Layout';
 import Quiz from '../../../components/Quiz';
+import CodeBlock from '../../../components/CodeBlock';
 
 export default async function SSR() {
-  const data = { message: "Hello from SSR!" };
+  const jsonData = '{ message: "Hello from SSR!" }';
+  const sampleCode = `export async function getServerSideProps(context) {
+  const res = await fetch('https://api.example.com/data');
+  const data = await res.json();
+  return { props: { data } };
+}`;
 
   return (
     <Layout>
@@ -13,13 +19,19 @@ export default async function SSR() {
       <p>
         In Next.js, export an async function called <code>getServerSideProps</code> from your page to fetch data on each request.
       </p>
-      <pre style={{ background: '#f4f4f4', padding: '10px', borderRadius: '4px' }}>
-{`export async function getServerSideProps(context) {
-  const res = await fetch('https://api.example.com/data');
-  const data = await res.json();
-  return { props: { data } };
-}`}
-      </pre>
+     
+        <div className="p-10">
+            <CodeBlock code={sampleCode} language="javascript" />
+          </div>
+    
+      <div style={{ marginTop: '1rem' }}>
+        <h3>Fetched Data (for demo purposes):</h3>
+    
+        <div className="p-10">
+            <CodeBlock code={jsonData} language="json" />
+          </div>
+        
+      </div>
       <p>
         SSR is useful for pages that need dynamic, real-time data.
       </p>
@@ -29,12 +41,7 @@ export default async function SSR() {
         correctAnswer={2}
         explanation="getServerSideProps is used for server-side rendering to fetch fresh data on every request."
       />
-      <div style={{ marginTop: '1rem' }}>
-        <h3>Fetched Data (for demo purposes):</h3>
-        <pre style={{ background: '#e6e6e6', padding: '10px', borderRadius: '4px' }}>
-          {JSON.stringify(data, null, 2)}
-        </pre>
-      </div>
+     
     </Layout>
   );
 }

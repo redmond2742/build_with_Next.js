@@ -18,6 +18,7 @@ export default function Deployment() {
         Your Next.js app is now live! You can also deploy on other platforms like Netlify or AWS.
       </p>
       <Quiz
+        title="Question 1"
         question="Which platform is recommended for deploying Next.js apps?"
         options={["Heroku", "Vercel", "Netlify", "AWS"]}
         correctAnswer={1}
