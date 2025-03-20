@@ -3,18 +3,19 @@ import React from "react";
 import "./ui/globals.css";  // Import any global styles (if necessary)
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Inter } from "next/font/google";
-
 import { Analytics } from "@vercel/analytics/react"
+import { Providers } from "../../components/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Build w/ Next.js",
-  description: "Learn Next.js by Building Apps",
+  description: "Read, Quiz and Build with Next.js",
 };
 
 export default function RootLayout({ children }) {
   return (
+<Providers>
     <html lang="en">
       <body className={inter.className}>
         <div className="min-h-screen bg-gray-800 text-white">
@@ -28,5 +29,6 @@ export default function RootLayout({ children }) {
         </div>
       </body>
     </html>
+    </Providers>
   );
 }

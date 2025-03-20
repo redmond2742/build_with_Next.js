@@ -1,6 +1,7 @@
 import Layout from '../../../components/Layout';
 import Quiz from '../../../components/Quiz';
 
+
 export default function Authentication() {
   return (
     <Layout>
@@ -30,7 +31,9 @@ export default NextAuth({
       <p>
         This example shows a basic setup of NextAuth.js. Authentication can be implemented on both the client and server side in Next.js.
       </p>
+    
       <Quiz
+        title="Question 1"
         question="Which package is commonly used for authentication in Next.js?"
         options={["Passport.js", "NextAuth.js", "Firebase Auth", "Auth0"]}
         correctAnswer={1}

@@ -5,7 +5,10 @@ export default function Layout({ children }) {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1>Build With Next.js</h1>
+      <h1 className="text-4xl font-bold leading-tight">Build With Next.js</h1>
+<h2 className="text-lg font-normal text-gray-600 leading-none">Read, Quiz, and Build with Next.js</h2>
+
+
         <nav>
           <Link href="/">Home</Link>
           {' | '}

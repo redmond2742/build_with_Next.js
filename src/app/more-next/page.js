@@ -1,6 +1,7 @@
 import Layout from '../../../components/Layout';
 import Quiz from '../../../components/Quiz';
 import CodeBlock from '../../../components/CodeBlock';
+import LoginButton from '../../../components/LoginButton';
 
 //Vercel templates: https://vercel.com/templates/next.js?utm_source=next-site&utm_medium=deploy-template-on-vercel-cta&utm_campaign=homepage-new
 // Blog starter templates
@@ -41,7 +42,11 @@ export default function Routing() {
                   <p>
                     This example shows a basic setup of NextAuth.js. Authentication can be implemented on both the client and server side in Next.js.
                   </p>
+                   <h3> Test Login</h3>
+                        <p> You can test the login functionality by clicking on the button below</p>
+                        <LoginButton />
                   <Quiz
+                   title="Question 1"
                     question="Which package is commonly used for authentication in Next.js?"
                     options={["Passport.js", "NextAuth.js", "Firebase Auth", "Auth0"]}
                     correctAnswer={1}

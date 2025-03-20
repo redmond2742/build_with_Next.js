@@ -1,7 +1,9 @@
 import Layout from '../../components/Layout';
 import Quiz from '../../components/Quiz';
 import AIPrompts from '../../components/AIPrompts'; 
+import LoginButton from '../../components/LoginButton';
 import Image from 'next/image';
+
 
 
 
@@ -9,8 +11,6 @@ export default function Home() {
   return (
     <Layout>
           <p>
-      
-     
       
       <a href="https://nextjs.org/">Next.js</a> offers a powerful and versatile set of tools that streamline the process of building modern, high-performance web applications. Designed with developer experience in mind, Next.js combines server-side rendering (SSR), static site generation (SSG), API routes, and automatic code splitting to optimize performance and scalability.
 <br></br>
